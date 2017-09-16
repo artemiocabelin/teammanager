@@ -1,0 +1,18 @@
+<p>
+  game-three works!
+</p>
+
+<table>
+  <tr>
+    <th>Team Name</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let player of playerList" >
+    <td><a href="#">{{player.name}}</a></td>
+    <td>
+      <button (click)="updateGame3Status('playing', player._id)" [ngClass]="{ 'playing': player.game3Status === 'playing' }">Playing</button>
+      <button (click)="updateGame3Status('not-playing', player._id)" [ngClass]="{ 'not-playing': player.game3Status === 'not-playing' }">Not Playing</button>
+      <button (click)="updateGame3Status('undecided', player._id)" [ngClass]="{ 'undecided': player.game3Status === 'undecided' }">Undecided</button>
+    </td>
+  </tr>
+</table>

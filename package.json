@@ -1,0 +1,19 @@
+{
+  "name": "teammanager",
+  "version": "1.0.0",
+  "description": "``` ng new public --routing cd public ng build ``` ``` npm init -y npm install express ejs body-parser mongoose --save ``` ### Basic Angular Modules to import inside app.module.ts: ```javascript import { FormsModule } from '@angular/forms'; // <-- Import FormsModule import { HttpModule } from '@angular/http'; // <-- Import HttpModule ``` ### Launching:",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.11"
+  }
+}

@@ -1,0 +1,14 @@
+<p>
+  add works!
+</p>
+<fieldset>
+  <form (submit) = "onSubmit()">
+    <label>Player Name:
+      <input type="text" name="name" [(ngModel)]="player.name" />
+    </label>
+    <label>Preferred Position:
+      <input type="text" name="pref_position" [(ngModel)]="player.pref_position" />
+    </label>
+    <input type="submit" value="ADD" />
+  </form>
+</fieldset>
